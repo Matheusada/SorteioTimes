@@ -2,10 +2,10 @@ import random
 
 # Lista de jogadores com suas notas (nome, nota)
 jogadores = [
-    ("Matheus", 70), ("Mayquin", 70), ("Jimmy", 80), ("Biel", 70),
-    ("Pablo", 65), ("André", 60), ("Guilherme Caldas", 60), ("Marley", 65),
-    ("Fábio", 60), ("Ferrari", 50), ("Caio", 60), ("Wanderson", 55),
-    ("Adriano", 45), ("Marco thúlio", 45), ("Chico", 65), ("Marcelin", 65)
+    ("Matheus", 70), ("Mayquin", 70), ("Jimmy", 80), ("Felipe C.", 45),
+    ("Pablo", 65), ("André", 65),("Marley", 65),
+    ("Fábio", 60), ("Ferrari", 50), ("Caio", 60), ("Wanderson", 60),
+    ("Marcelin", 65)
 ]
 # Função para balancear os times
 def balancear_times(jogadores):
@@ -17,7 +17,7 @@ def balancear_times(jogadores):
 
     # Alternar jogadores entre os 4 times para balancear
     for i, jogador in enumerate(jogadores):
-        times[i % 4].append(jogador)
+        times[i % 3].append(jogador)
 
     return times
 
