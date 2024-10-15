@@ -3,9 +3,9 @@ import random
 # Lista de jogadores com suas notas (nome, nota)
 jogadores = [
     ("Matheus", 70), ("Mayquin", 69), ("Felipe C.", 45),
-    ("Pablo", 68), ("André", 67), ("Marley", 65), ("Caio", 60), ("Wanderson", 60),
+    ("Pablo", 68), ("André", 65), ("Marley", 65), ("Caio", 60), ("Wanderson", 60),
     ("Xico", 62), ("Marcelin", 65), ("Biel", 70), ("Felipe Soares", 62),
-    ("Ernani", 70), ("Artur", 70), ("Giovanni", 60), ("Guilherme", 68)
+    ("Ernani", 70), ("Artur", 70), ("Giovanni", 60), ("Guilherme", 65)
 ]
 
 # Função para balancear os times
