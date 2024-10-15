@@ -2,22 +2,23 @@ import random
 
 # Lista de jogadores com suas notas (nome, nota)
 jogadores = [
-    ("Matheus", 70), ("Mayquin", 70), ("Jimmy", 80), ("Felipe C.", 45),
-    ("Pablo", 65), ("André", 65),("Marley", 65),
-    ("Fábio", 60), ("Ferrari", 50), ("Caio", 60), ("Wanderson", 60),
-    ("Marcelin", 65)
+    ("Matheus", 70), ("Mayquin", 69), ("Felipe C.", 45),
+    ("Pablo", 68), ("André", 67), ("Marley", 65), ("Caio", 60), ("Wanderson", 60),
+    ("Xico", 62), ("Marcelin", 65), ("Biel", 70), ("Felipe Soares", 62),
+    ("Ernani", 70), ("Artur", 70), ("Giovanni", 60), ("Guilherme", 68)
 ]
+
 # Função para balancear os times
 def balancear_times(jogadores):
-    # Ordenar os jogadores pela nota (do maior para o menor)
-    jogadores.sort(key=lambda x: x[1], reverse=True)
+    # Embaralhar a lista de jogadores aleatoriamente
+    random.shuffle(jogadores)
     
-    # Inicializar times
+    # Inicializar os 4 times
     times = [[], [], [], []]
 
-    # Alternar jogadores entre os 4 times para balancear
+    # Distribuir os jogadores entre os 4 times
     for i, jogador in enumerate(jogadores):
-        times[i % 3].append(jogador)
+        times[i % 4].append(jogador)
 
     return times
 
@@ -25,7 +26,7 @@ def balancear_times(jogadores):
 def calcular_total(time):
     return sum([jogador[1] for jogador in time])
 
-# Sorteia times balanceados
+# Sorteia e balanceia os times
 times = balancear_times(jogadores)
 
 # Exibe os times e seus totais
