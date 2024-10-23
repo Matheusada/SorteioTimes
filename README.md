@@ -34,7 +34,7 @@
 
 <ul>
   <li><strong>Linguagem:</strong> Python</li>
-  <li><strong>Bibliotecas:</strong> random (para o sorteio), pandas (para gerenciamento dos dados dos jogadores)</li>
+  <li><strong>Bibliotecas:</strong> random (para o sorteio), FUTURAMENTE: pandas (para gerenciamento dos dados dos jogadores)</li>
 </ul>
 
 
